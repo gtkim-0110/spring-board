@@ -14,8 +14,11 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping
-    public List<User> getUsers() {
-        return userService.getAll();
+    public List<User> getUsers(
+        @RequestParam(defaultValue = "1") int page,
+        @RequestParam(defaultValue = "10") int size
+    ) {
+        return userService.getAll(page, size);
     }
 
     @PostMapping

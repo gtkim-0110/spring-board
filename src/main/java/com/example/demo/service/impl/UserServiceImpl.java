@@ -20,8 +20,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> getAll() {
-        return userMapper.findAll();
+    public List<User> getAll(int page, int size) {
+
+        if( page < 1 || size < 1 ) {
+            throw new IllegalArgumentException("page or size must be greater than 0");
+        }
+
+        int offset = ( page - 1 ) * size;
+        return userMapper.findAll(size, offset);
     }
 
     public void createUser(User user) {

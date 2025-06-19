@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.MenuMapper">
+
+    <resultMap id="menuResultMap" type="com.example.demo.model.Menu">
+        <id property="id" column="id"/>
+        <result property="pId" column="pid"/>
+        <result property="name" column="name"/>
+        <result property="src" column="src"/>
+        <result property="orderNo" column="order_no"/>
+        <result property="icon" column="icon"/>
+        <result property="isActive" column="is_active"/>
+        <result property="depth" column="depth"/>
+        <result property="createDt" column="create_dt"/>
+        <result property="updateDt" column="update_dt"/>
+        <result property="component" column="component" />
+    </resultMap>
+
+    <select id="findMenus" resultMap="menuResultMap">
+        SELECT *
+        FROM menu;
+    </select>
+
+    <insert id="createMenu">
+
+    </insert>
+
+</mapper>
+
+
+        <!--        useGeneratedKeys="true" keyProperty="id"-->
