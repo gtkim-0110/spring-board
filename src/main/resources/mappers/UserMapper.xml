@@ -5,7 +5,10 @@
 <mapper namespace="com.example.demo.mapper.UserMapper">
 
     <select id="findAll" resultType="com.example.demo.model.User">
-        SELECT * FROM users;
+        SELECT *
+        FROM users
+        ORDER BY created_at DESC
+        limit #{size} offset #{offset};
     </select>
 
     <insert id="createUser" parameterType="com.example.demo.model.User" useGeneratedKeys="true" keyProperty="id">

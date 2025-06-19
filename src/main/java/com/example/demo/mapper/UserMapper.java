@@ -8,6 +8,6 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
     String testConnection();
-    List<User> findAll();
+    List<User> findAll(int size, int offset);
     void createUser(User user);
 }
