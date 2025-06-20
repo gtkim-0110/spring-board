@@ -4,6 +4,11 @@ import lombok.Data;
 
 import java.util.Date;
 
+enum MenuRole {
+  user,
+  admin
+}
+
 @Data
 public class Menu {
   private Long id;
@@ -17,4 +22,5 @@ public class Menu {
   private Date createDt;
   private Date updateDt;
   private String component;
+  private MenuRole menuRole;
 }
