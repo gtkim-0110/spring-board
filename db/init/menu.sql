@@ -17,9 +17,15 @@ CREATE TABLE menu (
 
 select * from menu;
 
+delete from menu
+    where id = 2;
+
 
 INSERT INTO menu (pid, name, src, depth, component) values (null, '메인','/main',0, 'Main');
 INSERT INTO menu (pid, name, src, depth, component) values (null, '대쉬보드','/dashboard',0, 'Dashboard');
 INSERT INTO menu (pid, name, src, depth, component) values (null, '관리자','/admin',0, 'Admin');
-INSERT INTO menu (pid, name, src, depth, component) values (3, '게시판','/admin/board',1, 'Admin');
+INSERT INTO menu (pid, name, src, depth, component) values (3, '게시판','/admin/board',1, 'Board');
+
+INSERT INTO menu (pid, name, src, depth, component) values (3, '템프','/temp',1, 'Temp');
+
 
