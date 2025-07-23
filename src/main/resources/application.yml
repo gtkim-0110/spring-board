@@ -15,5 +15,9 @@ mybatis:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+ncp:
+  access-key: ncp_iam_BPAMKR5y6EvIavGYIPxX
+  secret-key: ncp_iam_BPKMKR7zrYj1RRQx5DtRjBVyKyXD2igpPZ
 
-
+jwt:
+  secret: this-is-a-very-secret-key-1234567890123456

@@ -1,0 +1,16 @@
+### GET 요청
+GET http://localhost:8080/api/products
+Content-Type: application/json
+
+### POST 요청
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "productName": "product create test",
+  "description": "product create description",
+  "subscriptionCode": "PROTECTED"
+}
+
+### DELETE 요청
+DELETE http://localhost:8080/api/products?productId={productId}

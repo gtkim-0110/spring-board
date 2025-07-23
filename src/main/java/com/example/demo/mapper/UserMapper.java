@@ -10,4 +10,5 @@ public interface UserMapper {
     String testConnection();
     List<User> findAll(int size, int offset);
     void createUser(User user);
+    User findByUsername(String username);
 }

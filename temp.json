@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "actionName": "string",
+      "associatedStagesCount": 0,
+      "dayQuotaRequest": 0,
+      "disabled": true,
+      "domainCode": "string",
+      "modifier": "string",
+      "monthQuotaRequest": 0,
+      "permission": "string",
+      "quotaCondition": "string",
+      "rateRps": 0,
+      "tenantId": "string",
+      "usagePlanDescription": "string",
+      "usagePlanId": "string",
+      "usagePlanName": "string"
+    }
+  ],
+  "dayQuotaRequest": 0,
+  "monthQuotaRequest": 0,
+  "quotaCondition": "string",
+  "rateRps": 0,
+  "total": 0
+}
